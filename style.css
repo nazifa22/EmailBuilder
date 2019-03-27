@@ -15,12 +15,35 @@
   background: #add5f0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #add5f0; 
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #82b5d6; 
+}
+
 html {
   scroll-behavior: smooth;
 }
 	
 body {
   font-family: 'Srisakdi', cursive;
+  background: floralwhite;
 }
 
 xmp {
@@ -34,6 +57,7 @@ xmp {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     text-align: left;
+    font-size: 14px;
 }
 	
 aside {
@@ -101,9 +125,38 @@ li i {
 
 xmp {
   font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  line-height: 20px;
 }
 
-div#show {
+#show {
   /* border-left: 70px solid; */
-  padding-left: 30px;
+  padding: 35px;
+  height: 500px;
+  overflow-y: scroll;
+  /* background-color: #333; */
+  /* color: #fff; */
+  border-radius: 5px;
+  border-top-left-radius: 75px;
+  margin-top: 50px;
+  box-shadow: 7px 10px 30px 0px #d2d2d2;
+}
+
+#show > div {
+  position: relative;
+}
+
+#show > div > button {
+  position: absolute;
+  right: 0;
+  background: #add3eb;
+  font-size: 12px;
+}
+
+button {
+  font-family: 'Roboto Slab', serif;
+}
+
+#content {
+  margin: 20px 0;
 }

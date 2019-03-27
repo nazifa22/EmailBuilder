@@ -7,9 +7,18 @@ function getContent(id)
   let contents = document.getElementById(elementId);
 
   // Placing on the empty div
-  let output = document.getElementById('show');
-      output.innerHTML = contents.innerHTML;
+  let output = document.getElementById('content');
+      output = output.innerHTML = contents.innerHTML;
 } 
+
+function copyDivToClipboard() {
+  var range = document.createRange();
+  range.selectNode(document.getElementById("show"));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  alert('Copied to clipboard');
+}
 
 function output(row,col)
 {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Builder</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Srisakdi" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,7 +11,15 @@
 </head>
 <body>
   <div class="container">
-    <div id="show"></div>
+    <div id="show">
+      <!-- <button class="btn btn-dark">Copy Text</button> -->
+      <div>
+        <button class="btn btn-light" onclick='copyDivToClipboard()'>Copy Text</button> 
+      </div>
+      <div id="content">
+
+      </div>
+    </div>
   </div>
 
 	<aside>
@@ -37,7 +45,6 @@
   </aside>
     <div id="oneTwoOne">
       <xmp>
-        
         <!-- TEXT HEADER SECTION STARTS -->
         <tbody><tr>
           <td align="center" valign="top" width="100%" bgcolor="#f4f4f4" style="padding: 10px 0 5px 0;">
@@ -1047,6 +1054,7 @@
     </div>
 	  <div id="CTA">
       <xmp>
+        <!-- Without logo -->
         <tr>
           <td align="left" style="padding: 0; font-size: 12px; line-height: 20px; color: #717171; font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;">
 
@@ -1064,6 +1072,23 @@
                 </td>
                 </tr>
               </tbody></table>
+
+          </td>
+        </tr>
+
+        <!-- With Logo -->
+        <tr>
+          <td align="left" valign="middle" style="padding-top: 16px; padding-bottom: 16px;">
+            
+            <table bgcolor="#5C3183" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <th>
+                    <a href="http://janssenmedicalcloud.co.uk/" target="_blank" style="border: 0 solid #FFFFFF; color: #33363A; display: inline-block; font-size: 14px; font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif; font-weight: bold; line-height: 20px; text-decoration: none; padding: 13px 15px 13px 14px;">
+                      <span style="mso-line-height-rule: exactly; mso-text-raise: 6px; line-height: 22px; color:#ffffff; text-transform: uppercase;">Link to jmc</span> <img src="http://images.inform.janssen-emea.com/EloquaImages/clients/JanssenPharmaceutica/%7B3b675a39-58d2-42b2-952f-6e927203a2fb%7D_2.png" alt="icon" width="18" style="vertical-align: text-top;">
+                    </a>
+                  </th>
+                </tr>
+            </tbody></table>
 
           </td>
         </tr>
@@ -1387,7 +1412,8 @@
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td style="-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; border-collapse: collapse; color: #717171; font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif; font-size: 12px; font-smoothing: antialiased; font-weight: normal; line-height: 20px; margin: 0; padding: 0; padding-bottom: 0px; text-align: left; vertical-align: top;" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</td>
+                                    <td style="-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; border-collapse: collapse; color: #717171; font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif; font-size: 12px; font-smoothing: antialiased; font-weight: normal; line-height: 20px; margin: 0; padding: 0; padding-bottom: 0px; text-align: left; vertical-align: top;" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    </td>
                                   </tr>
                                   <!-- ========== TWO COLUMN WITH THUMBNAIL STARTS ========== -->
                                   <tr>
@@ -3897,9 +3923,12 @@
       </xmp>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    -->
     <script src="script.js"></script>
 </body>
 </html>
