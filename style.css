@@ -119,7 +119,7 @@ li i {
   border-radius: 25px;
 }
 
-#CTA, #banner, #threeLogo, #singleLogo, #doubleLogo, #eloqua, #oneTwoOne, #twoColLayout, #threeColLayout, #bg, #event, #oneThird {
+#CTA, #banner, #tripleLogo, #singleLogo, #doubleLogo, #eloqua, #oneTwoOne, #twoColLayout, #threeColLayout, #background, #event, #oneThirdColLayout {
   display: none
 }
 
@@ -130,16 +130,13 @@ xmp {
 }
 
 #show {
-  /* border-left: 70px solid; */
   padding: 35px;
   height: 500px;
   overflow-y: scroll;
-  /* background-color: #333; */
-  /* color: #fff; */
-  border-radius: 5px;
-  border-top-left-radius: 75px;
-  margin-top: 50px;
+  border-radius: 6px;
+  margin-top: 10px;
   box-shadow: 7px 10px 30px 0px #d2d2d2;
+  background: #f9f9f9;
 }
 
 #show > div {
@@ -149,7 +146,8 @@ xmp {
 #show > div > button {
   position: absolute;
   right: 0;
-  background: #add3eb;
+  /* background: #add3eb; */
+  background: rgba(255, 152, 0, 0.85);
   font-size: 12px;
 }
 
@@ -159,4 +157,10 @@ button {
 
 #content {
   margin: 20px 0;
+}
+
+#heading {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 30px;
+  text-transform: capitalize;
 }

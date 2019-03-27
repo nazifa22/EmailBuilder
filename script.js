@@ -2,6 +2,7 @@ function getContent(id)
 {
   // Storing contents in a variable
   let elementId = id.getAttribute('data-id');
+  document.getElementById('heading').innerHTML = elementId;
 
   // Fetching elements by ID
   let contents = document.getElementById(elementId);
@@ -22,7 +23,7 @@ function copyDivToClipboard() {
 
 function output(row,col)
 {
-  var row = prompt('Please enter the number of rows for custom table or you can skip!').toLowerCase();
+  var row = prompt('Please enter the number of rows for custom table or you can skip!');
   var col = prompt('Please enter the number of cols for custom table or you can skip!');
   var table = `cellpadding="0" cellpaddin="0" border="0" width="100%"`,
     tableData = `-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; border-collapse: collapse; color: #717171; font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif; font-size: 12px; font-smoothing: antialiased; font-weight: normal; line-height: 20px;`;
@@ -52,7 +53,6 @@ function output(row,col)
         j = 1;
         result = result + `<xmp>  </tr></xmp>`;
     }
-  result = result + `<xmp></table></xmp>`
-  let output = document.getElementById('show').innerHTML =  result;
+  result = result + `<xmp></table></xmp>`;
   // document.write(`<div> ${result}  </div>`);
 };
