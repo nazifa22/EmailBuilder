@@ -1,6 +1,5 @@
 function getContent(id)
 {
-  // Storing contents in a variable
   let elementId = id.getAttribute('data-id');
   document.getElementById('heading').innerHTML = elementId;
 
@@ -39,9 +38,9 @@ function output(row,col)
   }
   
   var j = 1;
-  //assigning table
+
   var result = result + `<xmp><table ${table}></xmp>`;
-  //assigning table row
+
   for(var i=1; i<=row; i++)
     {
         result = result + '<xmp>  <tr></xmp>'
@@ -55,4 +54,6 @@ function output(row,col)
     }
   result = result + `<xmp></table></xmp>`;
   // document.write(`<div> ${result}  </div>`);
+
+  result = document.getElementById('show').innerHTML = result;
 };
