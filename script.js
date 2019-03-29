@@ -1,7 +1,17 @@
 function getContent(id)
 {
   let elementId = id.getAttribute('data-id');
-  document.getElementById('heading').innerHTML = elementId;
+  if(elementId == 'CTA')
+  {
+    document.getElementById('heading').innerHTML = elementId;
+  }
+  else if(elementId == 'oneTwoOne')
+  {
+    document.getElementById('heading').innerHTML = '121';
+  }
+  else {
+    document.getElementById('heading').innerHTML = elementId.split(/(?=[A-Z])/).join(" ");
+  }
   
   let output;
 
