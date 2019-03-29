@@ -148,6 +148,7 @@ xmp {
   right: 0;
   /* background: #add3eb; */
   background: rgba(255, 152, 0, 0.85);
+  border: 1px solid rgba(255, 152, 0, 0.85);
   font-size: 12px;
 }
 
