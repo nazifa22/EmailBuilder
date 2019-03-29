@@ -119,7 +119,7 @@ li i {
   border-radius: 25px;
 }
 
-#CTA, #banner, #tripleLogo, #singleLogo, #doubleLogo, #eloqua, #oneTwoOne, #twoColLayout, #threeColLayout, #background, #event, #oneThirdColLayout {
+#CTA, #banner, #tripleLogo, #singleLogo, #doubleLogo, #eloqua, #oneTwoOne, #twoColLayout, #threeColLayout, #background, #event, #oneThirdColLayout, #customLayout {
   display: none
 }
 
