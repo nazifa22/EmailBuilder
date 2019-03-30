@@ -49,11 +49,11 @@ function getContent(id)
         }
         output = output + `<xmp></table></xmp>`;
 
-        // output = document.getElementById('content').innerHTML = output;
+        output = document.getElementById('content').innerHTML = output;
 
-        $(document).ready(function(){
-          output = document.getElementById('content').innerHTML = output;
-        });
+        // $(document).ready(function(){
+        //   output = document.getElementById('content').innerHTML = output;
+        // });
   }
 
   else {
