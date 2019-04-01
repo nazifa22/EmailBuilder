@@ -93,7 +93,7 @@ li {
     padding: 3px 10px 3px 5px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    cursor: -webkit-grabbing;
+    cursor: pointer;
     -webkit-transform: translate(-210px);
         -ms-transform: translate(-210px);
             transform: translate(-210px);
