@@ -34,7 +34,7 @@ function getContent(id)
       
       var j = 1;
 
-      output = output + `<xmp><table ${table}></xmp>`;
+      output = `<xmp><table ${table}></xmp>`;
 
       for(var i=1; i<=row; i++)
         {
