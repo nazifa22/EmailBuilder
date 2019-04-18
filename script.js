@@ -1,3 +1,5 @@
+document.getElementById('show').contentEditable = true;
+
 function getContent(id)
 {
   let elementId = id.getAttribute('data-id');
